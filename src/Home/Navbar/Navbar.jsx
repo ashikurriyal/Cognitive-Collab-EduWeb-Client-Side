@@ -36,7 +36,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="font-semibold text-xl btn btn-outline border-2 border-fuchsia-800 hover:text-white hover:bg-gradient-to-r from-fuchsia-800  to-pink-600 hover:">Login</button>
+                <button className="font-semibold text-xl btn btn-outline border-2 border-fuchsia-800 hover:text-white hover:bg-gradient-to-r from-fuchsia-800  to-pink-600 hover:"><Link to="/login">Login</Link></button>
             </div>
         </div>
     );

@@ -12,6 +12,7 @@ const Footer = () => {
                     <aside>
                         <img className='w-20' src={logo} alt="" />
                         <p className="font-bold lg:text-xl text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800  to-pink-600 ">Cognitive Collab </p>
+                        
                         <p className='text-base font-medium text-black'>Intilligence, Brilliance and Connecting Minds for Collective Success</p>
                     </aside>
                 </div>
@@ -38,7 +39,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <hr className='border-2 border-black'/>
+            <hr className='border-2 border-black' />
             <div className='flex items-center'>
                 <div className='w-1/2'>
                     <div className="py-6 text-sm text-center text-black-300">© 2024 <span className="text-black font-semibold">Cognitive Collab</span>. All rights reserved.</div>
