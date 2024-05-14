@@ -17,8 +17,21 @@ const Navbar = () => {
     const navItems = <>
         <li className="font-semibold text-xl"><Link to="/">Home</Link></li>
         <li className="font-semibold text-xl"><Link to="/assignments">Assignments</Link></li>
-        <li className="font-semibold text-xl"><Link to="/createassignments">Create Assignments</Link></li>
-        <li className="font-semibold text-xl"><Link to="/pendingassignments">Pending Assignments</Link></li>
+
+        {
+            user &&
+            <>
+                <li className="font-semibold text-xl"><Link to="/createassignments">Create Assignments</Link></li>
+            </>
+        }
+        {
+            user &&
+            <>
+                <li className="font-semibold text-xl"><Link to="/pendingassignments">Pending Assignments</Link></li>
+            </>
+        }
+
+        
     </>
     return (
         <div className="navbar bg-base-100 h-22 mb-4">

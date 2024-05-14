@@ -22,7 +22,7 @@ const Footer = () => {
 
 
                         <div className="lg:w-full">
-                            <NavLink to={'/'}><h1 className="text-center font-marcellus text-3xl lg:text-5xl font-bold hover:drop-shadow-xl text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800  to-pink-600">Cognitive Collab</h1></NavLink>
+                            <NavLink to={'/'}><h1 className="p-4 text-center font-marcellus text-3xl lg:text-5xl font-bold hover:drop-shadow-xl text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800  to-pink-600">Cognitive Collab</h1></NavLink>
                         </div>
                         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:w-full sm:grid-cols-4 font-inter text-black">
                             <div className="space-y-3">
