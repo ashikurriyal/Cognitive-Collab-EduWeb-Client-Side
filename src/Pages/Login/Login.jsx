@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from 'sweetalert2'
 
 
 const Login = () => {
 
     const { signIn } = useContext(AuthContext)
+    const navigate = useNavigate();
 
     const handleLogin = event => {
         event.preventDefault();
@@ -16,10 +18,26 @@ const Login = () => {
 
         signIn(email, password)
             .then(result => {
+                Swal.fire({
+                    title: "Login Successful!",
+                    text: "Welcome Back to Cognitive Collab!",
+                    icon: "success"
+                });
                 const user = result.user;
                 console.log(user)
+                navigate(location?.state ? location.state : "/")
+
+                event.target.reset()
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                });
+                console.log(error)
+
+            })
     }
     return (
         <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-base-200 text-gray-800 container mx-auto border-2 border-fuchsia-800">

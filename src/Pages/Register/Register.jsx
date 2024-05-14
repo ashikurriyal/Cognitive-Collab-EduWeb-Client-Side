@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
-
+import Swal from 'sweetalert2'
 
 const Register = () => {
 
@@ -18,10 +18,23 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
+                Swal.fire({
+                    title: "Register Successful!",
+                    text: "Welcome to Cognitive Collab!",
+                    icon: "success"
+                });
                 const user = result.user;
                 console.log(user)
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                console.log(error)
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                  });
+            })
+
     }
     return (
         <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-base-200 text-gray-800 container mx-auto border-2 border-fuchsia-800">
