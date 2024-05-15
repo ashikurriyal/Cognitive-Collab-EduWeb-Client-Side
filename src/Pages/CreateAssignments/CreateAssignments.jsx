@@ -3,6 +3,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+import Swal from "sweetalert2";
 
 
 const CreateAssignments = () => {
@@ -21,11 +22,30 @@ const CreateAssignments = () => {
         const dueDate = form.dueDate.value;
         const email = form.email.value;
 
-        const assignments = {assignmentTitle, marks, difficultyLevel, image, assignmentDescription, dueDate, email}
+        const assignments = { assignmentTitle, marks, difficultyLevel, image, assignmentDescription, dueDate, email }
 
         console.log(assignments)
 
-        /* form.reset() */
+        fetch('http://localhost:5300/assignments', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(assignments)
+        })
+            .then(res => res.json()
+            )
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    Swal.fire({
+                        title: 'Success',
+                        text: 'Do you want to continue',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+            })
+        // form.reset();
 
 
 
