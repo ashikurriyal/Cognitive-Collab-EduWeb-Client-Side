@@ -8,12 +8,14 @@ import CreateAssignments from "../Pages/CreateAssignments/CreateAssignments";
 import PrivateRoutes from "./PrivateRoutes";
 import Assignments from "../Pages/Assignments/Assignments";
 import ViewAssignment from "../Pages/ViewAssignment/ViewAssignment";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element:<Main></Main> ,
+        element:<Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
