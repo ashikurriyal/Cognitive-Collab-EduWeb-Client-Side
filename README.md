@@ -1,4 +1,4 @@
-Cognitive Collab: Online Group Study Platform(Requirement 1)
+# **Cognitive Collab: Online Group Study Platform(Requirement 1)**
 
 <a href="https://cognitivecollab-4dafd.web.app/" rel="nofollow">Cognitive Collab</a>
 
