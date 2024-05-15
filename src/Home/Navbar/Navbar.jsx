@@ -67,13 +67,13 @@ const Navbar = () => {
                             user?.photoURL ?
                                 <div className="tooltip tooltip-bottom avatar " data-tip={user.displayName}>
                                     <div className="lg:w-12 w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 ">
-                                        <img src={user.photoURL} />
+                                        <img className="" src={user.photoURL} />
                                     </div>
                                 </div> :
 
                                 <div className="tooltip tooltip-bottom avatar dropdown dropdown-end" data-tip={user?.displayName}>
-                                    <div tabIndex={0} role="button" className="lg:w-12 rounded-full ring ring-offset-base-100 ring-pink-600">
-                                        <img src="https://i.ibb.co/rb1pJ40/ben-sweet-2-Lowvi-VHZ-E-unsplash.jpg" />
+                                    <div tabIndex={0} role="button" className="lg:w-12 w-10 rounded-full ring ring-offset-base-100 ring-pink-600">
+                                        <img className="" src="https://i.ibb.co/rb1pJ40/ben-sweet-2-Lowvi-VHZ-E-unsplash.jpg" />
                                     </div>
                                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-lg w-52">
                                         <li className=""><a className="font-semibold text-sm">Attempted Assignments</a></li>
