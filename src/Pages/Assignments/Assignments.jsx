@@ -12,10 +12,15 @@ const Assignments = () => {
                     <p className="text-gray-500">Difficulty Level: </p>
                 </div>
                 <hr className="border-gray-300" />
+                <div className="flex items-center gap-5">
+                    Actions:
+                    <button className="btn btn-sm border-green-500 hover:bg-gradient-to-r from-green-500  to-green-600">Update</button>
+                    <button className="btn btn-sm border-red-500 hover:bg-gradient-to-r from-red-500  to-red-600">Delete</button>
+                </div>
                 {/* <div className="flex gap-4 lg:mt-5"> */}
                 <div className="w-full">
-                    <button className="btn w-1/2 border-2 border-black hover:bg-black hover:text-white">
-                        <p className="">Details</p>
+                    <button className="btn w-full border-2 border-black hover:bg-black hover:text-white">
+                        <p className="">View Details</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 hover:text-white h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
