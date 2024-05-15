@@ -32,7 +32,7 @@ const CreateAssignments = () => {
     }
     return (
         <form onSubmit={handleCreateAssignments} className="flex flex-col items-center mb-12">
-            <div className="text-center mb-10 mt-6">
+            <div className="text-center mb-10 mt-6 ">
                 <h1 className="lg:text-5xl text-3xl font-playfair font-bold text-black">Create Assignments</h1>
             </div>
             <div className="w-1/2 flex flex-col  gap-6">

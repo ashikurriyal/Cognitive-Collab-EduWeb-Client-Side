@@ -9,7 +9,7 @@ const Banner = () => {
                     <p className='text-black text-3xl font-medium w-3/4'>Collective Intelligence, Individual Brilliance, and Connecting Minds for Collective Success..</p>
                 </div>
                 <div>
-                    <button className="font-bold w-1/3  text-black bg-gradient-to-r from-fuchsia-800  to-pink-600 text-transparent text-xl btn btn-outline border-2 border-fuchsia-800 hover:text-white hover: hover:">Join us by Sign Up</button>
+                    <button className="font-bold w-1/3 text-black bg-gradient-to-r from-fuchsia-800  to-pink-600 text-xl btn btn-outline border-2 border-fuchsia-800 hover:text-white hover: hover:">Join us by Sign Up</button>
                 </div>
             </div>
             <div className='w-1/2'>
